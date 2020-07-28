@@ -78,7 +78,7 @@
 - [ ] Add comments to the functions
 - [ ] Update README.md. The used template can be found here: [https://github.com/othneildrew/Best-README-Template](https://github.com/othneildrew/Best-README-Template)
 - [ ] Add graphical representation of obtained stats
-- [ ] Multithreading when 
+- [ ] Multithreading when obtaining multiple pgn files
 
 There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need.
 
