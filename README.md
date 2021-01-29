@@ -29,7 +29,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/inotin/pngstats">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -55,7 +55,6 @@
 ## Table of Contents
 
 * [About the Project](#about-the-project)
-  * [Built With](#built-with)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
@@ -75,29 +74,13 @@
 
 ### To Do List
 - [x] Make initial commit
-- [ ] Add comments to the functions
-- [ ] Update README.md. The used template can be found here: [https://github.com/othneildrew/Best-README-Template](https://github.com/othneildrew/Best-README-Template)
-- [ ] Add graphical representation of obtained stats
-- [ ] Multithreading when obtaining multiple pgn files
-
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need.
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue.
-
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
-
-### Built With
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
-
-
+- [x] Add comments to the functions
+- [x] Optimize downloading of PGNs
+- [x] Add graphical representation of obtained stats
+- [x] Add ELO descriptions to the chart
+- [x] Update README.md.
+- [ ] Integrate a chess board for visualizing an opening by click of a bar in the barchart
+- [ ] Create predictive models to imitate a certain player
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -107,44 +90,41 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* youtube_transcript_api
+Just install the requirements
+
 ```sh
-pip install youtube_transcript_api
+pip install -r requirements.txt
 ```
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
 ```sh
-git clone https://github.com/your_username_/Project-Name.git
+git clone https://github.com/inotin/pgnstats.git
 ```
-3. Install NPM packages
+2. Install the requirements
 ```sh
-npm install
+pip install -r requirements.txt
 ```
-4. Enter your API in `config.js`
-```JS
-const API_KEY = 'ENTER YOUR API';
-```
-
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
+If you want to get the info on top 30 openings of Anand when he won use:
+```sh
+python pgnstats.py anand 30 won
+```
+You'll find the formed barchart in ./outputs/graph.html
+<p align="center">
+    <img src="images/anand30won.png" alt="graph" width="100%">
+</p>
 
 
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
-
+See the [open issues](https://github.com/inotin/pgnstats/issues) for a list of proposed features (and known issues).
 
 
 <!-- CONTRIBUTING -->
@@ -170,41 +150,30 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Ilia Notin - notin13@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/inotin/pgnstats](https://github.com/inotin/pgnstats)
 
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
-
-
-
+* [Automatic requirment.txt creation](https://github.com/Damnever/pigar)
+* [The used Readme template](https://github.com/othneildrew/Best-README-Template)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat-square
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=flat-square
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=flat-square
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/inotin/pgnstats.svg?style=flat-square
+[contributors-url]: https://github.com/inotin/pgnstats/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/inotin/pgnstats.svg?style=flat-square
+[forks-url]: https://github.com/inotin/pgnstats/network/members
+[stars-shield]: https://img.shields.io/github/stars/inotin/pgnstats.svg?style=flat-square
+[stars-url]: https://github.com/inotin/pgnstats/stargazers
+[issues-shield]: https://img.shields.io/github/issues/inotin/pgnstats.svg?style=flat-square
+[issues-url]: https://github.com/inotin/pgnstats/issues
+[license-shield]: https://img.shields.io/github/license/inotin/pgnstats.svg?style=flat-square
+[license-url]: https://github.com/inotin/pgnstats/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/inotin/
 [product-screenshot]: images/screenshot.png
+[graph]: images/anand30won.png
