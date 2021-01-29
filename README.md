@@ -29,7 +29,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/inotin/pngstats">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -116,7 +116,9 @@ If you want to get the info on top 30 openings of Anand when he won use:
 python pgnstats.py anand 30 won
 ```
 You'll find the formed barchart in ./outputs/graph.html
-
+<p align="center">
+    <img src="images/anand30won.png" alt="graph" width="100%">
+</p>
 
 
 <!-- ROADMAP -->
@@ -174,3 +176,4 @@ Project Link: [https://github.com/inotin/pgnstats](https://github.com/inotin/pgn
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/inotin/
 [product-screenshot]: images/screenshot.png
+[graph]: images/anand30won.png
