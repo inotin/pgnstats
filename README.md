@@ -55,7 +55,6 @@
 ## Table of Contents
 
 * [About the Project](#about-the-project)
-  * [Built With](#built-with)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
@@ -80,16 +79,8 @@
 - [x] Add graphical representation of obtained stats
 - [x] Add ELO descriptions to the chart
 - [x] Update README.md.
-- [ ] Deploy the project to my website
-
-
-### Built With
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Pandas](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
-
-
+- [ ] Integrate a chess board for visualizing an opening by click of a bar in the barchart
+- [ ] Create predictive models to imitate a certain player
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -99,10 +90,10 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* youtube_transcript_api
+Just install the requirements
+
 ```sh
-pip install youtube_transcript_api
+pip install -r requirements.txt
 ```
 
 ### Installation
@@ -165,7 +156,7 @@ Project Link: [https://github.com/inotin/pgnstats](https://github.com/inotin/pgn
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 * [Automatic requirment.txt creation](https://github.com/Damnever/pigar)
-* [The used Readme template] (https://github.com/othneildrew/Best-README-Template)
+* [The used Readme template](https://github.com/othneildrew/Best-README-Template)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
